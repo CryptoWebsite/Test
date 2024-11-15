@@ -93,7 +93,6 @@ button:hover {
 .stroopwafel {
     position: absolute;
     top: 0vh;  /* Adjust the distance from the bottom */
-    left: 25%;
     transform: translateX(-50%);
     width: 50px;
     height: 50px;
@@ -101,6 +100,17 @@ button:hover {
     background-size: cover;
     border-radius: 50%;
     animation: roll 10s linear infinite;
+}
+
+
+/* First Stroopwafel (Positioned at 25% from the left) */
+.stroopwafel:nth-of-type(1) {
+    left: 25%;  /* Position this one at 25% from the left */
+}
+
+/* Second Stroopwafel (Positioned at 70% from the left) */
+.stroopwafel:nth-of-type(2) {
+    left: 75%;  /* Position this one at 70% from the left */
 }
 
 /* Rolling Animation */
