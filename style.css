@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #f2f2f2; /* Gray background for the body */
 }
 
 /* Full-Screen Intro Section */
@@ -17,7 +17,9 @@ body {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    position: relative;
+    position: absolute; /* Ensures it takes full screen without borders */
+    top: 0;
+    left: 0;
     overflow: hidden; /* Prevents horizontal scrolling */
 }
 
@@ -45,7 +47,7 @@ button:hover {
 /* Stroopwafel Animation */
 .stroopwafel {
     position: absolute;
-    bottom: 0;
+    bottom: -100px; /* Start below the screen */
     left: -100px;
     width: 100px;
     height: 100px;
