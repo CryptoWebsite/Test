@@ -87,7 +87,7 @@ button:hover {
 /* Rolling Stroopwafel Animation */
 .stroopwafel {
     position: absolute;
-    bottom: 10px; /* Adjust the distance from the bottom */
+    bottom: 100px; /* Adjust the distance from the bottom */
     left: 50%;
     transform: translateX(-50%);
     width: 200px; /* Adjust the size */
@@ -107,6 +107,11 @@ button:hover {
         transform: translateX(-50%) rotate(360deg); /* Full rotation */
     }
 }
+/* Set the cursor to a stroopwafel image */
+body {
+    cursor: url('https://github.com/CryptoWebsite/DutchCoin/raw/main/favicon-32x322.png'), auto; /* Make sure the URL is correct */
+}
+
 
 /* Footer */
 footer {
