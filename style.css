@@ -84,6 +84,30 @@ button:hover {
     background-color: #e65c00;
 }
 
+#coin /* Stroopwafel Rolling Animation */
+.stroopwafel {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px; /* Size of the Stroopwafel */
+    height: 120px;
+    background-image: url('path/to/Stroopwafel.png'); /* Replace with your image path */
+    background-size: cover;
+    border-radius: 50%; /* Makes the image circular */
+    animation: roll 10s linear infinite; /* Animation for the rolling effect */
+}
+
+/* Rolling Animation */
+@keyframes roll {
+    0% {
+        transform: translateX(-50%) rotate(0deg); /* Starting position */
+    }
+    100% {
+        transform: translateX(-50%) rotate(360deg); /* Ending position after a full rotation */
+    }
+
+
 /* Footer */
 footer {
     text-align: center;
