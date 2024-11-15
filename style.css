@@ -93,7 +93,7 @@ body {
 /* Rolling Stroopwafel Animation */
 .stroopwafel {
     position: absolute;
-    bottom: 1500px; /* Adjust the distance from the bottom */
+    top: 80%
     left: 50%;
     transform: translateX(-50%);
     width: 200px; /* Adjust the size */
