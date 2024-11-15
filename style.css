@@ -84,10 +84,16 @@ button:hover {
     background-color: #e65c00;
 }
 
+body {
+    position: relative;  /* Ensure absolute positioning works relative to the body */
+    margin: 0;
+    padding: 0;
+}
+
 /* Rolling Stroopwafel Animation */
 .stroopwafel {
     position: absolute;
-    bottom: 1000px; /* Adjust the distance from the bottom */
+    bottom: 100px; /* Adjust the distance from the bottom */
     left: 50%;
     transform: translateX(-50%);
     width: 200px; /* Adjust the size */
