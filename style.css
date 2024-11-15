@@ -84,18 +84,18 @@ button:hover {
     background-color: #e65c00;
 }
 
-#coin /* Stroopwafel Rolling Animation */
+/* Rolling Stroopwafel Animation */
 .stroopwafel {
     position: absolute;
-    bottom: 20px; /* Adjust as needed */
+    bottom: 20px; /* Adjust the distance from the bottom */
     left: 50%;
     transform: translateX(-50%);
-    width: 120px; /* Size of the Stroopwafel */
-    height: 120px;
-    background-image: url('path/to/Stroopwafel.png'); /* Replace with your image path */
+    width: 120px; /* Adjust the size */
+    height: 120px; /* Adjust the size */
+    background-image: url('https://github.com/CryptoWebsite/DutchCoin/raw/main/Stroopwafel.png'); /* Update with the correct path */
     background-size: cover;
     border-radius: 50%; /* Makes the image circular */
-    animation: roll 10s linear infinite; /* Animation for the rolling effect */
+    animation: roll 10s linear infinite; /* Rolls continuously */
 }
 
 /* Rolling Animation */
@@ -104,9 +104,9 @@ button:hover {
         transform: translateX(-50%) rotate(0deg); /* Starting position */
     }
     100% {
-        transform: translateX(-50%) rotate(360deg); /* Ending position after a full rotation */
+        transform: translateX(-50%) rotate(360deg); /* Full rotation */
     }
-
+}
 
 /* Footer */
 footer {
