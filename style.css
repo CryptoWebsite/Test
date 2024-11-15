@@ -1,13 +1,54 @@
-/* Basic Layout */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-    margin: 0;
-    padding: 0;
+/* Full screen welcome screen */
+#intro {
+    background-color: #ff6700; /* Orange background */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
 }
- 
-/* Header with Tabs */
+
+#intro h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#intro p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Stroopwafel animation */
+.stroopwafel {
+    position: absolute;
+    bottom: -100px; /* Start below the screen */
+    animation: rollStroopwafel 10s linear infinite;
+    width: 100px;
+    height: 100px;
+    background: url('https://github.com/CryptoWebsite/DutchCoin/raw/main/Stroopwafel%20cutOUT.JPG') no-repeat center center;
+    background-size: contain;
+}
+
+/* Stroopwafel animation */
+@keyframes rollStroopwafel {
+    0% {
+        transform: translateX(-150px) rotate(360deg); /* Start off screen */
+    }
+    50% {
+        transform: translateX(100vw) rotate(180deg); /* Move across the screen */
+    }
+    100% {
+        transform: translateX(-150px) rotate(360deg); /* Return to starting point */
+    }
+}
+
+/* Header and Navigation */
 header {
     background-color: #ff6700;
     padding: 1em;
@@ -37,12 +78,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Sections */
-#welcome {
-    text-align: center;
-    padding: 2em;
-}
-
+/* Section Styling */
 section {
     padding: 2em 1em;
     max-width: 800px;
@@ -58,12 +94,12 @@ section h2 {
     margin-bottom: 1em;
 }
 
-/* Centering and Styling the Featured Image */
 .featured-image {
     display: block;
     margin: 1em auto;
-    width: 200px; /* Sets a consistent size */
-    border-radius: 50%; /* Makes it circular */
+    width: 200px; /* Size of the image */
+    height: 200px;
+    border-radius: 50%; /* Make it circular */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
