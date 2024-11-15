@@ -84,24 +84,24 @@ button:hover {
     background-color: #e65c00;
 }
 
-body {
-    position: relative;  /* Ensure absolute positioning works relative to the body */
-    margin: 0;
-    padding: 0;
+/* Container to manage positioning */
+.stroopwafel-container {
+    position: relative;
+    height: 100vh;  /* Set to 100% of the viewport height */
 }
 
 /* Rolling Stroopwafel Animation */
 .stroopwafel {
     position: absolute;
-    top: 80%
+    bottom: 100px;  /* Adjust the distance from the bottom */
     left: 50%;
     transform: translateX(-50%);
-    width: 200px; /* Adjust the size */
-    height: 200px; /* Adjust the size */
-    background-image: url('https://github.com/CryptoWebsite/DutchCoin/raw/main/Stroopwafel.png'); /* Update with the correct path */
+    width: 200px;
+    height: 200px;
+    background-image: url('https://github.com/CryptoWebsite/DutchCoin/raw/main/Stroopwafel.png');
     background-size: cover;
-    border-radius: 50%; /* Makes the image circular */
-    animation: roll 10s linear infinite; /* Rolls continuously */
+    border-radius: 50%;
+    animation: roll 10s linear infinite;
 }
 
 /* Rolling Animation */
