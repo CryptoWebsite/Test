@@ -1,102 +1,67 @@
-/* Basic Layout */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+/* Airdrop Section */
+#airdrop {
+    padding: 3em 1em;
+    background-color: #f9f9f9;
     color: #333;
-    margin: 0;
-    padding: 0;
-} 
-
-/* Header with Tabs */
-header {
-    background-color: #ff6700;
-    padding: 1em;
-    text-align: center;
-    color: #fff;
 }
 
-header h1 {
-    margin: 0;
+.airdrop-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Sections */
-#welcome {
-    text-align: center;
-    padding: 2em;
-}
-
-section {
-    padding: 2em 1em;
-    max-width: 800px;
-    margin: auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
+h2 {
+    font-size: 2em;
     color: #ff6700;
     text-align: center;
     margin-bottom: 1em;
 }
 
-/* Centering and Styling the Featured Image */
-.featured-image {
-    display: block;
-    margin: 1em auto;
-    width: 200px; /* Sets a consistent size */
-    border-radius: 50%; /* Makes it circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+h3 {
+    color: #ff6700;
+    font-size: 1.5em;
+    margin-top: 1em;
 }
 
-/* Buy Button */
+ul, ol {
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #f2f2f2;
+    padding: 1em;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+a {
+    color: #ff6700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 button {
-    display: block;
-    margin: 1em auto;
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
     background-color: #ff6700;
+    color: white;
+    padding: 1em;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 1.2em;
     cursor: pointer;
+    margin-top: 1em;
+    display: block;
+    width: 100%;
 }
 
 button:hover {
     background-color: #e65c00;
 }
-
-
-/* Set the cursor to a stroopwafel image */
-body {
-    cursor: url('https://github.com/CryptoWebsite/DutchCoin/raw/main/favicon-32x322.png'), auto; /* Make sure the URL is correct */
-}
-
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #ff6700;
-    color: #fff;
-    font-size: 0.9em;
-}
-
