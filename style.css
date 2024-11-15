@@ -87,13 +87,12 @@ button:hover {
 /* Container to manage positioning */
 .stroopwafel-container {
     position: relative;
-    height: 100px; 
 }
 
 /* Rolling Stroopwafel Animation */
 .stroopwafel {
     position: absolute;
-    bottom: 100px;  /* Adjust the distance from the bottom */
+    top: 1vh;  /* Adjust the distance from the bottom */
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
