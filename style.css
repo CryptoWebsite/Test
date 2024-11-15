@@ -8,9 +8,9 @@ body {
 
 /* Full-Screen Intro Section */
 #intro {
-    width: 200vw;
+    width: 100vw;
     height: 100vh;
-    background-color: #f2f2f2; /* Orange color */
+    background-color: #ff6700; /* Orange color */
     color: white;
     display: flex;
     justify-content: center;
