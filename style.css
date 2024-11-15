@@ -87,7 +87,7 @@ button:hover {
 /* Container to manage positioning */
 .stroopwafel-container {
     position: relative;
-    height: 1vh;
+    height: 10vh;
 }
 
 /* Rolling Stroopwafel Animation */
