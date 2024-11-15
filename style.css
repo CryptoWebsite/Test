@@ -88,20 +88,23 @@ button:hover {
 /* Make sure the section has position relative */
 #how-to-buy {
     position: relative;  /* This makes it the reference point for absolute positioning inside it */
+    padding-top: 2em;  /* Gives space from the top */
 }
 
 /* Container to manage positioning of stroopwafels */
 .stroopwafel-container {
-    position: absolute;  /* Now it's positioned relative to the #how-to-buy section */
-    top: 30%;  /* Adjust based on where you want the Stroopwafels to appear vertically within the section */
+    position: absolute;  /* Positioned relative to the #how-to-buy section */
+    top: 20%;  /* Adjust based on where you want the Stroopwafels to appear vertically within the section */
     left: 0;
     width: 100%;  /* Stretch across the full width of the section */
+    height: 100%;  /* Ensure the container is tall enough */
+    overflow: visible;  /* Allow Stroopwafels to be seen even if they exceed container */
 }
 
 /* Rolling Stroopwafel Animation */
 .stroopwafel {
     position: absolute;
-    top: 0vh;  /* Adjust the distance from the bottom */
+    top: 0vh;  /* Adjust this to control vertical placement */
     transform: translateX(-50%);
     width: 50px;
     height: 50px;
