@@ -1,35 +1,56 @@
+/* Basic Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
 /* Full-Screen Intro Section */
 #intro {
-    background-color: #ff6700; /* Orange background */
-    height: 100vh; /* Full viewport height */
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff6700;
+    color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-    position: relative;
-    overflow: hidden;
+    flex-direction: column;
 }
 
 #intro p {
-    font-size: 1.5rem;
+    font-size: 2em;
     margin: 20px 0;
-    font-family: 'Arial', sans-serif;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff6700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e65c00;
 }
 
 /* Stroopwafel animation */
 .stroopwafel {
     position: absolute;
-    bottom: -100px; /* Start below the screen */
-    animation: rollStroopwafel 10s linear infinite;
+    bottom: -100px;
     width: 100px;
     height: 100px;
     background: url('https://github.com/CryptoWebsite/DutchCoin/raw/main/Stroopwafel%20cutOUT.JPG') no-repeat center center;
-    background-size: contain;
+    background-size: cover;
+    animation: rollStroopwafel 10s linear infinite;
 }
 
-/* Stroopwafel animation */
+/* Stroopwafel animation movement */
 @keyframes rollStroopwafel {
     0% {
         transform: translateX(-150px) rotate(360deg); /* Start off screen */
@@ -91,9 +112,9 @@ section h2 {
 .featured-image {
     display: block;
     margin: 1em auto;
-    width: 200px; /* Size of the image */
+    width: 200px;
     height: 200px;
-    border-radius: 50%; /* Make it circular */
+    border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
