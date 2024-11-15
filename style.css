@@ -183,22 +183,6 @@ a:hover {
     text-decoration: underline;
 }
 
-button {
-    background-color: #ff6700;
-    color: white;
-    padding: 1em;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin-top: 1em;
-    display: block;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #e65c00;
-}
 
 /* Footer */
 footer {
