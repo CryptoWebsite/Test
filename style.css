@@ -7,44 +7,109 @@ body {
     padding: 0;
 }
 
+/* Header with Tabs */
+header {
+    background-color: #ff6700;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+#welcome {
+    text-align: center;
+    padding: 2em;
+}
+
+section {
+    padding: 2em 1em;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #ff6700;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Centering and Styling the Featured Image */
+.featured-image {
+    display: block;
+    margin: 1em auto;
+    width: 200px; /* Sets a consistent size */
+    border-radius: 50%; /* Makes it circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buy Button */
+button {
+    margin-top: 2em;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff6700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;  /* Ensure button is positioned above the Stroopwafels */
+    z-index: 2;  /* Higher z-index to make it clickable */
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
 /* Make sure the section has position relative */
 #how-to-buy {
     position: relative;  /* This makes it the reference point for absolute positioning inside it */
-    padding-top: 2em;  /* Gives space from the top */
+    padding-top: 2em;  /* Adds space at the top of the section */
+    text-align: center;  /* Centers the content */
 }
 
 /* Container to manage positioning of stroopwafels */
 .stroopwafel-container {
     position: absolute;  /* Now it's positioned relative to the #how-to-buy section */
-    top: 10%;  /* Adjust based on where you want the Stroopwafels to appear vertically within the section */
-    left: 0;
+    top: 30%;  /* Place it below the content (adjust this value for the correct vertical alignment) */
     width: 100%;  /* Stretch across the full width of the section */
-    height: 100%;  /* Ensure the container is tall enough */
-    overflow: visible;  /* Allow Stroopwafels to be seen even if they exceed container */
-    z-index: 1;  /* Set a low z-index so it doesn’t interfere with the button */
+    display: flex;
+    justify-content: space-between;  /* Distributes space between the two stroopwafels */
+    z-index: 1;  /* Ensure this is below the button, so it doesn't block interaction */
 }
 
 /* Rolling Stroopwafel Animation */
 .stroopwafel {
-    position: absolute;
-    top: 0;  /* Adjust this to control vertical placement */
-    transform: translateX(-50%);
     width: 50px;
     height: 50px;
     background-image: url('https://github.com/CryptoWebsite/DutchCoin/raw/main/Stroopwafel.png');
     background-size: cover;
     border-radius: 50%;
     animation: roll 10s linear infinite;
-}
-
-/* First Stroopwafel (Positioned at 25% from the left) */
-.stroopwafel:nth-of-type(1) {
-    left: 25%;  /* Position this one at 25% from the left of the section */
-}
-
-/* Second Stroopwafel (Positioned at 75% from the left) */
-.stroopwafel:nth-of-type(2) {
-    left: 75%;  /* Position this one at 75% from the left of the section */
 }
 
 /* Rolling Animation */
@@ -57,10 +122,14 @@ body {
     }
 }
 
-/* Make sure the button is clickable and not blocked */
-button {
-    position: relative;  /* Ensure the button is positioned above the Stroopwafels */
-    z-index: 2;  /* Higher z-index to make it clickable */
+/* First Stroopwafel (Positioned at 25% from the left) */
+.stroopwafel:nth-of-type(1) {
+    left: 25%;  /* Position this one at 25% from the left of the section */
+}
+
+/* Second Stroopwafel (Positioned at 75% from the left) */
+.stroopwafel:nth-of-type(2) {
+    left: 75%;  /* Position this one at 75% from the left of the section */
 }
 
 /* Set the cursor to a stroopwafel image */
