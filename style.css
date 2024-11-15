@@ -92,7 +92,7 @@ button:hover {
 /* Rolling Stroopwafel Animation */
 .stroopwafel {
     position: absolute;
-    top: 1vh;  /* Adjust the distance from the bottom */
+    top: 0vh;  /* Adjust the distance from the bottom */
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
